@@ -1,0 +1,16 @@
+.footer {
+  color: white;
+  background-color: #21242d;
+  flex-shrink: 0;
+  height: 285px;
+
+  .content {
+    width: 1440px;
+    margin-inline: auto;
+    padding-block: 50px;
+
+    .opacity {
+      opacity: 50%;
+    }
+  }
+}

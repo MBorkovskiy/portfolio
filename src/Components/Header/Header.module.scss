@@ -1,0 +1,15 @@
+.header {
+  color: white;
+  background-color: #21242d;
+
+  .content {
+    width: 1440px;
+    margin-inline: auto;
+    padding-block: 50px;
+
+    .header_info:hover {
+      color: #7e3cc0;
+      cursor: pointer;
+    }
+  }
+}

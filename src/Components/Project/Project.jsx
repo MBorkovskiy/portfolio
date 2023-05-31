@@ -11,15 +11,16 @@ export const Project = ({ el }) => {
   console.log(el);
   return (
     <Stack className={styles.project} spacing={"50px"}>
-      <Box className={styles.project_img}>
+      <Stack className={styles.project_img} marginX={"auto"}>
         <Preview el={el} />
-      </Box>
+      </Stack>
       <Stack
         width={"300px"}
         alignItems={"center"}
         justifyContent={"space-between"}
+        marginX={"auto"}
       >
-        <Box>
+        <Stack>
           <Typography
             fontWeight={"700"}
             textTransform={"uppercase"}
@@ -32,7 +33,7 @@ export const Project = ({ el }) => {
           <Typography textAlign={"center"} fontSize={14}>
             {el.description}
           </Typography>
-        </Box>
+        </Stack>
         <Stack spacing={2}>
           <Stack
             direction={"row"}

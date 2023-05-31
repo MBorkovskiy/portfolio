@@ -17,6 +17,7 @@ export const Projects = () => {
           fontWeight={"900"}
           textTransform={"uppercase"}
           color={"primary"}
+          textAlign={{ xs: "center", md: "left" }}
           gutterBottom
         >
           Portfolio
@@ -26,6 +27,7 @@ export const Projects = () => {
           color={"secondary"}
           fontWeight={"600"}
           lineHeight={"120%"}
+          textAlign={{ xs: "center", md: "left" }}
           gutterBottom
         >
           Each project is a unique piece of development

@@ -1,8 +1,4 @@
 import styles from "./Footer.module.scss";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import MailIcon from "@mui/icons-material/Mail";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import { Stack, Typography } from "@mui/material";
 import { FooterInfo } from "../FooterInfo/FooterInfo";
 import { footerInfo } from "../../utils/constants";
@@ -10,11 +6,7 @@ import { footerInfo } from "../../utils/constants";
 export const Footer = () => {
   return (
     <Stack id="footer" className={styles.footer}>
-      <Stack
-        className={styles.content}
-        alignItems={"center"}
-        justifyContent={"center"}
-      >
+      <Stack className={styles.content} alignItems={"center"}>
         <Typography
           variant="h5"
           textTransform={"uppercase"}
@@ -24,9 +16,14 @@ export const Footer = () => {
         >
           Don't be shy! Hit me up!
         </Typography>
-        <Stack direction={"row"} spacing={4}>
+        <Stack direction={"row"} spacing={4} flexWrap={"wrap"}>
           {footerInfo.map((el) => (
-            <FooterInfo title={el.title} desc={el.desc} icon={el.icon} />
+            <FooterInfo
+              title={el.title}
+              desc={el.desc}
+              icon={el.icon}
+              link={el.link}
+            />
           ))}
         </Stack>
         <Typography mt={"50px"} fontSize={"14px"} className={styles.opacity}>
@@ -36,3 +33,5 @@ export const Footer = () => {
     </Stack>
   );
 };
+
+// https://t.me/maxim_alexeyevich

@@ -1,5 +1,4 @@
 import styles from "./FirstScreen.module.scss";
-import profile from "../../assets/profile.jpg";
 import { Box, Divider, IconButton, Stack, Typography } from "@mui/material";
 import { techIcons } from "../../utils/constants";
 import { Image } from "../Image/Image";
@@ -7,18 +6,23 @@ import { Image } from "../Image/Image";
 export const FirstScreen = () => {
   return (
     <Stack
-      direction={"row"}
+      direction={{ xs: "column-reverse", md: "row" }}
       padding={"150px"}
       spacing={10}
       justifyContent={"center"}
     >
-      <Stack width={"500px"} justifyContent={"space-between"}>
-        <Box>
+      <Stack
+        width={{ xs: "450px", md: "500px" }}
+        justifyContent={"center"}
+        marginX={"auto"}
+      >
+        <Stack>
           <Typography
             variant="h2"
             fontWeight={"900"}
             color={"primary"}
             lineHeight={"100%"}
+            textAlign={{ xs: "center", md: "left" }}
             gutterBottom
           >
             React Frontend Developer
@@ -27,7 +31,7 @@ export const FirstScreen = () => {
             Hi, I'm Maxim Borkovskiy. A passionate Front-end React Developer
             based in Moscow, Russia.
           </Typography>
-        </Box>
+        </Stack>
         <Box>
           <Typography
             fontWeight={"900"}
@@ -48,9 +52,13 @@ export const FirstScreen = () => {
           </Stack>
         </Box>
       </Stack>
-      <Box className={styles.profile}>
+      <Stack
+        className={styles.profile}
+        justifyContent={"center"}
+        marginX={"auto"}
+      >
         <Image />
-      </Box>
+      </Stack>
     </Stack>
   );
 };

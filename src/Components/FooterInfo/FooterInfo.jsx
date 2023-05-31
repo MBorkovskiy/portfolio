@@ -1,9 +1,16 @@
 import { IconButton, Stack, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
-export const FooterInfo = ({ title, desc, icon }) => {
+export const FooterInfo = ({ title, desc, icon, link }) => {
   return (
-    <Stack direction={"row"} spacing={1}>
-      <IconButton color="primary">{icon}</IconButton>
+    <Stack
+      direction={"row"}
+      spacing={1}
+      width={{ xs: "283px", md: "max-content" }}
+    >
+      <Link to={link} target="blank">
+        <IconButton color="primary">{icon}</IconButton>
+      </Link>
       <Stack>
         <Typography
           textTransform={"uppercase"}

@@ -6,20 +6,27 @@ export const About = () => {
   return (
     <Stack
       id="about"
-      direction={"row"}
+      direction={{ xs: "column", md: "row" }}
       padding={"150px"}
       spacing={10}
       justifyContent={"center"}
       className={styles.container}
+      marginX={"auto"}
     >
-      <Box className={styles.about}>
+      <Stack
+        width={"500px"}
+        justifyContent={"center"}
+        className={styles.about}
+        marginX={"auto"}
+      >
         <img src={about} alt="Image" />
-      </Box>
+      </Stack>
       <Stack width={"500px"}>
         <Typography
           fontWeight={"900"}
           textTransform={"uppercase"}
           color={"primary"}
+          textAlign={{ xs: "center", md: "left" }}
           gutterBottom
         >
           About me
@@ -29,11 +36,15 @@ export const About = () => {
           color={"secondary"}
           fontWeight={"600"}
           lineHeight={"120%"}
+          textAlign={{ xs: "center", md: "left" }}
           gutterBottom
         >
           A dedicated Front-end Developer based in Moscow, Russia
         </Typography>
-        <Typography color={"secondary"}>
+        <Typography
+          color={"secondary"}
+          textAlign={{ xs: "center", md: "left" }}
+        >
           As a Junior Front-End Developer, I possess an impressive arsenal of
           skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in
           designing and maintaining responsive websites that offer a smooth user

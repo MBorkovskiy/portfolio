@@ -27,21 +27,25 @@ export const footerInfo = [
     title: "Location",
     desc: "Russia,Moscow",
     icon: <LocationOnIcon fontSize="large" />,
+    link: "",
   },
   {
     title: "E-mail",
     desc: "borkovskiy.m@gmail.com",
     icon: <MailIcon fontSize="large" />,
+    link: "mailto:borkovskiy.m@gmail.com",
   },
   {
     title: "Telegram",
-    desc: "89269588045",
+    desc: "+7 (926) 958-80-45",
     icon: <TelegramIcon fontSize="large" />,
+    link: "https://t.me/maxim_alexeyevich",
   },
   {
     title: "GitHub",
     desc: "https://github.com/MBorkovskiy",
     icon: <GitHubIcon fontSize="large" />,
+    link: "https://github.com/MBorkovskiy",
   },
 ];
 

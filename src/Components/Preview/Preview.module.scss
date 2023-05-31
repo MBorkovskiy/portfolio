@@ -1,0 +1,83 @@
+main {
+  max-width: 100%;
+  width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+
+  > * {
+    grid-column: 1 / -1;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  animation: cinematic-camera 10s cubic-bezier(0.1, 0, 0.1, 1) both infinite;
+  @keyframes cinematic-camera {
+    from {
+      perspective-origin: 60% 40%;
+    }
+    to {
+      perspective-origin: 40% 60%;
+    }
+
+    from,
+    to {
+      opacity: 0;
+    }
+    25%,
+    75% {
+      opacity: 1;
+    }
+  }
+
+  &:after {
+    content: "";
+    background: #21242d21;
+    // position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+main {
+  transform-origin: top center;
+  transform-style: preserve-3d;
+  animation: inherit;
+  animation-name: cinematic;
+
+  > img {
+    display: block;
+    transform-style: preserve-3d;
+    animation: inherit;
+    animation-name: image-pop;
+    @keyframes image-pop {
+      70%,
+      100% {
+        transform: translate3d(0, 0, 60px);
+      }
+    }
+
+    &:last-of-type {
+      animation-delay: 4s;
+    }
+  }
+
+  @keyframes cinematic {
+    from {
+      transform: translateZ(-200px) rotateY(30deg) translateY(50vh);
+    }
+    to {
+      transform: translateZ(-100px) rotateY(-30deg) translateY(-100%)
+        translateY(50vh);
+    }
+  }
+}

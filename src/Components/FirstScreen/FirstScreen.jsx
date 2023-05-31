@@ -2,6 +2,7 @@ import styles from "./FirstScreen.module.scss";
 import profile from "../../assets/profile.jpg";
 import { Box, Divider, IconButton, Stack, Typography } from "@mui/material";
 import { techIcons } from "../../utils/constants";
+import { Image } from "../Image/Image";
 
 export const FirstScreen = () => {
   return (
@@ -48,7 +49,7 @@ export const FirstScreen = () => {
         </Box>
       </Stack>
       <Box className={styles.profile}>
-        <img src={profile} alt="Profile" />
+        <Image />
       </Box>
     </Stack>
   );

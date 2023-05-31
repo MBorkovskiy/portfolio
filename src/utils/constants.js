@@ -2,6 +2,15 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import MailIcon from "@mui/icons-material/Mail";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import tvone from "../assets/preview/tvapp1.png";
+import tvtwo from "../assets/preview/tvapp2.png";
+import tvthree from "../assets/preview/tvapp3.png";
+import gamesone from "../assets/preview/games1.png";
+import gamestwo from "../assets/preview/games2.png";
+import gamesthree from "../assets/preview/games3.png";
+import storeone from "../assets/preview/store1.png";
+import storetwo from "../assets/preview/store2.png";
+import storethree from "../assets/preview/store3.png";
 
 export const techIcons = [
   "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
@@ -46,6 +55,7 @@ export const projects = [
       code: "https://github.com/MBorkovskiy/tvapp",
       demo: "https://mborkovskiy.github.io/tvapp/",
     },
+    images: [tvone, tvtwo, tvthree],
   },
   {
     title: "Games",
@@ -56,6 +66,7 @@ export const projects = [
       code: "https://github.com/MBorkovskiy/games",
       demo: "https://mborkovskiy.github.io/games/",
     },
+    images: [gamesone, gamestwo, gamesthree],
   },
   {
     title: "Store",
@@ -66,5 +77,6 @@ export const projects = [
       code: "https://github.com/MBorkovskiy/store",
       demo: "https://mborkovskiy.github.io/store/",
     },
+    images: [storeone, storetwo, storethree],
   },
 ];

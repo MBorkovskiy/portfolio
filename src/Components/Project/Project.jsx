@@ -5,13 +5,14 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { Link } from "react-router-dom";
+import { Preview } from "../Preview/Preview";
 
 export const Project = ({ el }) => {
   console.log(el);
   return (
     <Stack className={styles.project} spacing={"50px"}>
       <Box className={styles.project_img}>
-        <img src={mock} alt="Project" />
+        <Preview el={el} />
       </Box>
       <Stack
         width={"300px"}

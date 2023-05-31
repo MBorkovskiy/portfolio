@@ -7,8 +7,9 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { Link } from "react-router-dom";
 
 export const Project = ({ el }) => {
+  console.log(el);
   return (
-    <Stack className={styles.project} direction={"row"} spacing={"50px"}>
+    <Stack className={styles.project} spacing={"50px"}>
       <Box className={styles.project_img}>
         <img src={mock} alt="Project" />
       </Box>

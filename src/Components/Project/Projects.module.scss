@@ -6,6 +6,8 @@
   border-radius: 8px;
   background-color: #f9f9f9;
 
+  flex-direction: row-reverse;
+
   .project_img {
     width: 500px;
     overflow: hidden;
@@ -20,4 +22,8 @@
   .link {
     width: 140px;
   }
+}
+
+.project:nth-child(even) {
+  flex-direction: row;
 }

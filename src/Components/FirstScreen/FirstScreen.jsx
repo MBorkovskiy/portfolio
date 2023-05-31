@@ -1,4 +1,5 @@
 import styles from "./FirstScreen.module.scss";
+import profile from "../../assets/profile.jpg";
 import { Box, Divider, IconButton, Stack, Typography } from "@mui/material";
 import { techIcons } from "../../utils/constants";
 
@@ -6,16 +7,22 @@ export const FirstScreen = () => {
   return (
     <Stack
       direction={"row"}
-      padding={"100px"}
-      spacing={4}
+      padding={"150px"}
+      spacing={10}
       justifyContent={"center"}
     >
       <Stack width={"500px"} justifyContent={"space-between"}>
         <Box>
-          <Typography variant="h2" fontWeight={"900"} color={"primary"}>
+          <Typography
+            variant="h2"
+            fontWeight={"900"}
+            color={"primary"}
+            lineHeight={"100%"}
+            gutterBottom
+          >
             React Frontend Developer
           </Typography>
-          <Typography fontSize={"18px"}>
+          <Typography fontSize={"18px"} color={"secondary"}>
             Hi, I'm Maxim Borkovskiy. A passionate Front-end React Developer
             based in Moscow, Russia.
           </Typography>
@@ -40,8 +47,8 @@ export const FirstScreen = () => {
           </Stack>
         </Box>
       </Stack>
-      <Box border={"1px solid black"} width={"300px"} height={"350px"}>
-        <img src="" alt="Profile" />
+      <Box className={styles.profile}>
+        <img src={profile} alt="Profile" />
       </Box>
     </Stack>
   );

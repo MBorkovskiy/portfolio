@@ -6,11 +6,7 @@
 }
 
 .App {
-  width: 1440px;
-  margin-inline: auto;
+  /* width: 1440px;
+  margin-inline: auto; */
   min-height: 100vh;
 }
-
-/* .MuiIconButton-root {
-  padding: 15px !important;
-} */

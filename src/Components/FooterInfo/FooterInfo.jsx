@@ -5,10 +5,14 @@ export const FooterInfo = ({ title, desc, icon }) => {
     <Stack direction={"row"} spacing={1}>
       <IconButton color="primary">{icon}</IconButton>
       <Stack>
-        <Typography textTransform={"uppercase"} fontWeight={"700"}>
+        <Typography
+          textTransform={"uppercase"}
+          fontWeight={"600"}
+          fontSize={"18px"}
+        >
           {title}
         </Typography>
-        <Typography>{desc}</Typography>
+        <Typography fontSize={"14px"}>{desc}</Typography>
       </Stack>
     </Stack>
   );

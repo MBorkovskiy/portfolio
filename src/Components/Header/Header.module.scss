@@ -1,13 +1,14 @@
-.header {
-  color: white;
+.content {
+  padding-block: 50px;
   background-color: #21242d;
 
-  .content {
-    width: 1440px;
-    margin-inline: auto;
-    padding-block: 50px;
-
-    .header_info:hover {
+  .header_info {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    &:hover {
       color: #7e3cc0;
       cursor: pointer;
     }

@@ -35,3 +35,36 @@ export const footerInfo = [
     icon: <GitHubIcon fontSize="large" />,
   },
 ];
+
+export const projects = [
+  {
+    title: "TvApp",
+    description:
+      "A Tvapp is a website that shows various selections of movies and TV series, allows you to find out all the necessary information about the film and watch the trailer. You can also save your favorite movies and series to your wishlist.",
+    stack: ["Scss modules", "MUI", "React JS", "Redux Toolkit"],
+    links: {
+      code: "https://github.com/MBorkovskiy/tvapp",
+      demo: "https://mborkovskiy.github.io/tvapp/",
+    },
+  },
+  {
+    title: "Games",
+    description:
+      "A Games website - a service that allows you to be aware of all the events in the world of free games through the news feed. You can find out all the necessary information about the game you are interested in, and if you are interested - go to the official page of the game. There is also a flexible filtering by genre, platform and sorting with a global search.",
+    stack: ["Css modules", "MUI", "React JS", "Redux Toolkit"],
+    links: {
+      code: "https://github.com/MBorkovskiy/games",
+      demo: "https://mborkovskiy.github.io/games/",
+    },
+  },
+  {
+    title: "Store",
+    description:
+      "A E-commerce website is an online platform that allows users to shop for personal or business use. The site provides an easy-to-use interface for searching, filtering, and purchasing a variety of products from a wide range of products. Also you can register and log in.",
+    stack: ["Css", "React JS", "Redux Toolkit"],
+    links: {
+      code: "https://github.com/MBorkovskiy/store",
+      demo: "https://mborkovskiy.github.io/store/",
+    },
+  },
+];

@@ -9,7 +9,7 @@ import { footerInfo } from "../../utils/constants";
 
 export const Footer = () => {
   return (
-    <Stack className={styles.footer}>
+    <Stack id="footer" className={styles.footer}>
       <Stack
         className={styles.content}
         alignItems={"center"}

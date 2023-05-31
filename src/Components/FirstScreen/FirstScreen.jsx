@@ -6,24 +6,19 @@ import { Image } from "../Image/Image";
 export const FirstScreen = () => {
   return (
     <Stack
-      direction={{ xs: "column-reverse", md: "row" }}
+      direction={{ sm: "column-reverse", md: "row" }}
       padding={"150px"}
-      spacing={10}
-      justifyContent={"center"}
-      width={"100%"}
+      spacing={{ sm: 5, md: 10 }}
+      marginX={"auto"}
     >
-      <Stack
-        width={{ xs: "450px", md: "500px" }}
-        justifyContent={"center"}
-        marginX={"auto"}
-      >
+      <Stack width={"500px"}>
         <Stack>
           <Typography
             variant="h2"
             fontWeight={"900"}
             color={"primary"}
             lineHeight={"100%"}
-            textAlign={{ xs: "center", md: "left" }}
+            textAlign={{ sm: "center", md: "left" }}
             gutterBottom
           >
             React Frontend Developer
@@ -33,7 +28,7 @@ export const FirstScreen = () => {
             based in Moscow, Russia.
           </Typography>
         </Stack>
-        <Box>
+        <Box mt={"36px"}>
           <Typography
             fontWeight={"900"}
             textTransform={"uppercase"}
@@ -53,11 +48,7 @@ export const FirstScreen = () => {
           </Stack>
         </Box>
       </Stack>
-      <Stack
-        className={styles.profile}
-        justifyContent={"center"}
-        marginX={"auto"}
-      >
+      <Stack className={styles.profile} marginX={"auto"}>
         <Image />
       </Stack>
     </Stack>

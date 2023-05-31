@@ -1,25 +1,23 @@
 import styles from "./Projects.module.scss";
-import mock from "../../assets/mock.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { Link } from "react-router-dom";
 import { Preview } from "../Preview/Preview";
 
 export const Project = ({ el }) => {
-  console.log(el);
   return (
-    <Stack className={styles.project} spacing={"50px"}>
-      <Stack className={styles.project_img} marginX={"auto"}>
+    <Stack
+      className={styles.project}
+      spacing={"50px"}
+      width={{ sm: "530px", md: "880px" }}
+      marginX={"auto"}
+    >
+      <Stack className={styles.project_img}>
         <Preview el={el} />
       </Stack>
-      <Stack
-        width={"300px"}
-        alignItems={"center"}
-        justifyContent={"space-between"}
-        marginX={"auto"}
-      >
+      <Stack width={"300px"} marginX={"auto"} justifyContent={"space-between"}>
         <Stack>
           <Typography
             fontWeight={"700"}

@@ -4,21 +4,13 @@ import { projects } from "../../utils/constants";
 
 export const Projects = () => {
   return (
-    <Stack
-      id="projects"
-      direction={"column"}
-      padding={"150px"}
-      spacing={6}
-      justifyContent={"center"}
-      marginX={"auto"}
-      width={"100%"}
-    >
+    <Stack id="projects" direction={"column"} padding={"150px"} spacing={6}>
       <Box>
         <Typography
           fontWeight={"900"}
           textTransform={"uppercase"}
           color={"primary"}
-          textAlign={{ xs: "center", md: "left" }}
+          textAlign={{ sm: "center", md: "left" }}
           gutterBottom
         >
           Portfolio
@@ -28,7 +20,7 @@ export const Projects = () => {
           color={"secondary"}
           fontWeight={"600"}
           lineHeight={"120%"}
-          textAlign={{ xs: "center", md: "left" }}
+          textAlign={{ sm: "center", md: "left" }}
           gutterBottom
         >
           Each project is a unique piece of development

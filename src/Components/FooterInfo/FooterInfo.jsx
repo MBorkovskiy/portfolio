@@ -6,7 +6,7 @@ export const FooterInfo = ({ title, desc, icon, link }) => {
     <Stack
       direction={"row"}
       spacing={1}
-      width={{ xs: "283px", md: "max-content" }}
+      width={{ sm: "283px", md: "max-content" }}
     >
       <Link to={link} target="blank">
         <IconButton color="primary">{icon}</IconButton>

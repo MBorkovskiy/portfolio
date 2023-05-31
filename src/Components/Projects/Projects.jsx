@@ -4,7 +4,13 @@ import { projects } from "../../utils/constants";
 
 export const Projects = () => {
   return (
-    <Stack id="projects" direction={"column"} padding={"150px"} spacing={6}>
+    <Stack
+      id="projects"
+      direction={"column"}
+      padding={"150px"}
+      spacing={6}
+      marginX={"auto"}
+    >
       <Box>
         <Typography
           fontWeight={"900"}

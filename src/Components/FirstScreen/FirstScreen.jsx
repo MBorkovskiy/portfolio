@@ -10,6 +10,7 @@ export const FirstScreen = () => {
       padding={"150px"}
       spacing={10}
       justifyContent={"center"}
+      width={"100%"}
     >
       <Stack
         width={{ xs: "450px", md: "500px" }}

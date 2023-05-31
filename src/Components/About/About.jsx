@@ -12,6 +12,7 @@ export const About = () => {
       justifyContent={"center"}
       className={styles.container}
       marginX={"auto"}
+      width={"100%"}
     >
       <Stack
         width={"500px"}

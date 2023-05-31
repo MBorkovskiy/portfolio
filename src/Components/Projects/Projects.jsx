@@ -11,6 +11,7 @@ export const Projects = () => {
       spacing={6}
       justifyContent={"center"}
       marginX={"auto"}
+      width={"100%"}
     >
       <Box>
         <Typography

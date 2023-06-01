@@ -4,17 +4,17 @@
   flex-shrink: 0;
 
   .content {
-    width: 1440px;
     margin-inline: auto;
     padding-block: 50px;
+    padding-inline: 50px;
     align-items: center;
 
-    @media screen and (max-width: 1024px) {
-      width: 600px;
-    }
-    @media screen and (max-width: 768px) {
-      width: 360px;
-    }
+    // @media screen and (max-width: 1024px) {
+    //   width: 600px;
+    // }
+    // @media screen and (max-width: 768px) {
+    //   width: 360px;
+    // }
 
     .opacity {
       opacity: 50%;

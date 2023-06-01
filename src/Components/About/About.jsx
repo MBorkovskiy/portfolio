@@ -14,7 +14,7 @@ export const About = () => {
         spacing={{ xs: 2, sm: 5, md: 10 }}
         width={{ xs: "360px", sm: "700px", md: "100%" }}
         marginX={"auto"}
-        // justifyContent={"center"}
+        justifyContent={"center"}
       >
         <Stack className={styles.about}>
           <img src={about} alt="Image" />

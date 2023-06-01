@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 export const H3Left = ({ children }) => {
   return (
     <Typography
+      component={"h3"}
       fontWeight={"900"}
       textTransform={"uppercase"}
       color={"primary"}

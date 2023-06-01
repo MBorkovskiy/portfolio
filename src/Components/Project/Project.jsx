@@ -13,8 +13,7 @@ export const Project = ({ el }) => {
       className={styles.project}
       spacing={{ xs: "15px", sm: "50px" }}
       width={{ xs: "100%", sm: "530px", md: "880px" }}
-      // justifyContent={"center"}
-      // marginX={"auto"}
+      marginX={"auto"}
     >
       <Stack className={styles.project_img}>
         <Preview el={el} />

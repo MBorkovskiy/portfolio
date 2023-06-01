@@ -16,7 +16,12 @@ export const Footer = () => {
         >
           Don't be shy! Hit me up!
         </Typography>
-        <Stack direction={"row"} spacing={2} flexWrap={"wrap"}>
+        <Stack
+          direction={"row"}
+          spacing={2}
+          flexWrap={"wrap"}
+          justifyContent={"center"}
+        >
           {footerInfo.map((el) => (
             <FooterInfo
               title={el.title}

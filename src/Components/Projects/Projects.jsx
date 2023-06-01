@@ -12,7 +12,7 @@ export const Projects = () => {
       spacing={{ xs: 2, sm: 4, md: 6 }}
       className={styles.projectss}
     >
-      <Box>
+      <Box paddingX={{ xs: 2, sm: 0 }}>
         <H3Left>Portfolio</H3Left>
         <H2Left>Each project is a unique piece of development</H2Left>
       </Box>

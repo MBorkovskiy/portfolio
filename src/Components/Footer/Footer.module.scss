@@ -11,6 +11,9 @@
     @media screen and (max-width: 1200px) {
       width: 600px;
     }
+    @media screen and (max-width: 768px) {
+      width: 360px;
+    }
 
     .opacity {
       opacity: 50%;

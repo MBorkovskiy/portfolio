@@ -7,8 +7,9 @@ export const Projects = () => {
     <Stack
       id="projects"
       direction={"column"}
-      padding={"150px"}
-      spacing={6}
+      padding={{ xs: "15px", sm: "100px", md: "150px" }}
+      spacing={{ xs: 2, sm: 4, md: 6 }}
+      justifyContent={"center"}
       marginX={"auto"}
     >
       <Box>
@@ -16,7 +17,7 @@ export const Projects = () => {
           fontWeight={"900"}
           textTransform={"uppercase"}
           color={"primary"}
-          textAlign={{ sm: "center", md: "left" }}
+          textAlign={{ xs: "center", md: "left" }}
           gutterBottom
         >
           Portfolio
@@ -26,7 +27,7 @@ export const Projects = () => {
           color={"secondary"}
           fontWeight={"600"}
           lineHeight={"120%"}
-          textAlign={{ sm: "center", md: "left" }}
+          textAlign={{ xs: "center", md: "left" }}
           gutterBottom
         >
           Each project is a unique piece of development

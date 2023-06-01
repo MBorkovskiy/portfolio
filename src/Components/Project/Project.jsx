@@ -11,13 +11,21 @@ export const Project = ({ el }) => {
     <Stack
       className={styles.project}
       spacing={"50px"}
-      width={{ sm: "530px", md: "880px" }}
+      width={{ xs: "100%", md: "880px" }}
+      justifyContent={"center"}
       marginX={"auto"}
     >
-      <Stack className={styles.project_img}>
+      <Stack
+        className={styles.project_img}
+        height={{ xs: "300px", md: "100%" }}
+      >
         <Preview el={el} />
       </Stack>
-      <Stack width={"300px"} marginX={"auto"} justifyContent={"space-between"}>
+      <Stack
+        width={"300px"}
+        justifyContent={"space-between"}
+        marginX={{ xs: "auto", md: "0" }}
+      >
         <Stack>
           <Typography
             fontWeight={"700"}
@@ -32,7 +40,7 @@ export const Project = ({ el }) => {
             {el.description}
           </Typography>
         </Stack>
-        <Stack spacing={2}>
+        <Stack spacing={2} mt={{ xs: "15px", md: "0" }}>
           <Stack
             direction={"row"}
             flexWrap={"wrap"}

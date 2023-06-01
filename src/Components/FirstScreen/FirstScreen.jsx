@@ -6,24 +6,22 @@ import { Image } from "../Image/Image";
 export const FirstScreen = () => {
   return (
     <Stack
-      direction={{ sm: "column-reverse", md: "row" }}
-      padding={"150px"}
-      spacing={{ sm: 5, md: 10 }}
+      direction={{ xs: "column-reverse", md: "row" }}
+      padding={{ xs: "15px", sm: "100px", md: "150px" }}
+      spacing={{ xs: 2, sm: 5, md: 10 }}
+      width={"100%"}
       marginX={"auto"}
+      justifyContent={"center"}
     >
-      <Stack width={"500px"}>
+      <Stack
+        width={{ xs: "100%", sm: "500px" }}
+        marginX={{ xs: "auto", md: "0" }}
+      >
         <Stack>
-          <Typography
-            variant="h2"
-            fontWeight={"900"}
-            color={"primary"}
-            lineHeight={"100%"}
-            textAlign={{ sm: "center", md: "left" }}
-            gutterBottom
-          >
+          <Typography color={"primary"} className={styles.head}>
             React Frontend Developer
           </Typography>
-          <Typography fontSize={"18px"} color={"secondary"}>
+          <Typography className={styles.desc} color={"secondary"}>
             Hi, I'm Maxim Borkovskiy. A passionate Front-end React Developer
             based in Moscow, Russia.
           </Typography>
@@ -39,7 +37,12 @@ export const FirstScreen = () => {
             Tech Stack
           </Typography>
           <Divider />
-          <Stack direction={"row"} justifyContent={"space-between"} mt={"6px"}>
+          <Stack
+            direction={"row"}
+            justifyContent={{ xs: "center", sm: "space-between" }}
+            mt={"6px"}
+            flexWrap={{ xs: "wrap", sm: "nowrap" }}
+          >
             {techIcons.map((el) => (
               <IconButton className={styles.tech_img_btn}>
                 <img src={el} alt="Tech Icon" className={styles.tech_img} />
@@ -48,7 +51,7 @@ export const FirstScreen = () => {
           </Stack>
         </Box>
       </Stack>
-      <Stack className={styles.profile} marginX={"auto"}>
+      <Stack className={styles.profile}>
         <Image />
       </Stack>
     </Stack>

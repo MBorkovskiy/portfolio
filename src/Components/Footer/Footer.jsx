@@ -33,5 +33,3 @@ export const Footer = () => {
     </Stack>
   );
 };
-
-// https://t.me/maxim_alexeyevich

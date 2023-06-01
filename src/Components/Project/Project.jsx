@@ -15,10 +15,7 @@ export const Project = ({ el }) => {
       justifyContent={"center"}
       marginX={"auto"}
     >
-      <Stack
-        className={styles.project_img}
-        height={{ xs: "300px", md: "100%" }}
-      >
+      <Stack className={styles.project_img}>
         <Preview el={el} />
       </Stack>
       <Stack

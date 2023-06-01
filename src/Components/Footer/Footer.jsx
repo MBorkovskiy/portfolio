@@ -6,17 +6,18 @@ import { footerInfo } from "../../utils/constants";
 export const Footer = () => {
   return (
     <Stack id="footer" className={styles.footer}>
-      <Stack className={styles.content} alignItems={"center"}>
+      <Stack className={styles.content}>
         <Typography
           variant="h5"
           textTransform={"uppercase"}
           fontWeight={"700"}
           mb={"30px"}
           color={"primary"}
+          // className={styles.txt}
         >
           Don't be shy! Hit me up!
         </Typography>
-        <Stack direction={"row"} spacing={4} flexWrap={"wrap"}>
+        <Stack direction={"row"} spacing={2} flexWrap={"wrap"}>
           {footerInfo.map((el) => (
             <FooterInfo
               title={el.title}
@@ -26,7 +27,7 @@ export const Footer = () => {
             />
           ))}
         </Stack>
-        <Typography mt={"50px"} fontSize={"14px"} className={styles.opacity}>
+        <Typography className={styles.opacity}>
           Copyright © 2023. All rights are reserved
         </Typography>
       </Stack>

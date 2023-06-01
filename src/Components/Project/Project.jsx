@@ -12,7 +12,7 @@ export const Project = ({ el }) => {
     <Stack
       className={styles.project}
       spacing={{ xs: "15px", sm: "50px" }}
-      width={{ xs: "100%", sm: "530px", md: "880px" }}
+      width={{ xs: "80%", sm: "80%", md: "880px" }}
       marginX={"auto"}
     >
       <Stack className={styles.project_img}>

@@ -10,11 +10,11 @@ export const About = () => {
       <Stack
         id="about"
         direction={{ xs: "column", md: "row" }}
-        padding={{ xs: "15px", sm: "100px", md: "150px" }}
+        padding={{ xs: "50px 15px", sm: "100px", md: "150px" }}
         spacing={{ xs: 2, sm: 5, md: 10 }}
         width={{ xs: "360px", sm: "700px", md: "100%" }}
         marginX={"auto"}
-        justifyContent={"center"}
+        // justifyContent={"center"}
       >
         <Stack className={styles.about}>
           <img src={about} alt="Image" />

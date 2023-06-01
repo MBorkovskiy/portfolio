@@ -8,11 +8,11 @@ export const FirstScreen = () => {
   return (
     <Stack
       direction={{ xs: "column-reverse", md: "row" }}
-      padding={{ xs: "15px", sm: "100px", md: "150px" }}
+      padding={{ xs: "50px 15px", sm: "100px", md: "150px" }}
       spacing={{ xs: 2, sm: 5, md: 10 }}
       width={"100%"}
-      marginX={"auto"}
-      justifyContent={"center"}
+      // marginX={"auto"}
+      // justifyContent={"center"}
     >
       <Stack
         width={{ xs: "100%", sm: "500px" }}

@@ -1,17 +1,10 @@
-import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
-import { Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
 
 export const Header = () => {
   return (
-    <Stack
-      className={styles.content}
-      direction={"row"}
-      spacing={4}
-      alignItems={"center"}
-      justifyContent={"center"}
-    >
+    <Stack className={styles.content}>
       <HashLink smooth to="/#about" className={styles.header_info}>
         About
       </HashLink>

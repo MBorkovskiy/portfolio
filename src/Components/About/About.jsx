@@ -1,12 +1,23 @@
 import styles from "./About.module.scss";
 import about from "../../assets/about.jpg";
+import { motion } from "framer-motion";
 import { Stack, Typography } from "@mui/material";
 import { H3Left } from "../H3Left/H3Left";
 import { H2Left } from "../H2Left/H2Left";
+import {
+  aboutImageAnimation,
+  aboutTextAnimation,
+} from "../../utils/animations";
 
 export const About = () => {
   return (
-    <Stack className={styles.container}>
+    <Stack
+      className={styles.container}
+      component={motion.div}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.9 }}
+    >
       <Stack
         id="about"
         direction={{ xs: "column", md: "row" }}
@@ -16,7 +27,12 @@ export const About = () => {
         marginX={"auto"}
         justifyContent={"center"}
       >
-        <Stack className={styles.about}>
+        <Stack
+          className={styles.about}
+          component={motion.div}
+          variants={aboutImageAnimation}
+          custom={1}
+        >
           <img src={about} alt="Image" />
         </Stack>
         <Stack
@@ -28,6 +44,9 @@ export const About = () => {
             A dedicated Front-end Developer based in Moscow, Russia
           </H2Left>
           <Typography
+            component={motion.p}
+            variants={aboutTextAnimation}
+            custom={4}
             color={"secondary"}
             textAlign={{ xs: "center", md: "left" }}
             fontSize={{ xs: "14px", sm: "16px" }}

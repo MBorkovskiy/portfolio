@@ -16,6 +16,7 @@ export const FirstScreen = () => {
       component={motion.div}
       initial="hidden"
       whileInView="visible"
+      viewport={{ amount: 0.2 }}
       direction={{ xs: "column-reverse", md: "row" }}
       padding={{ xs: "50px 15px", sm: "100px", md: "150px" }}
       spacing={{ xs: 2, sm: 5, md: 10 }}

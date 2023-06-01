@@ -13,13 +13,12 @@ export const Project = ({ el }) => {
       className={styles.project}
       spacing={{ xs: "15px", sm: "50px" }}
       width={{ xs: "80%", sm: "80%", md: "880px" }}
-      marginX={"auto"}
     >
       <Stack className={styles.project_img}>
         <Preview el={el} />
       </Stack>
       <Stack
-        width={"300px"}
+        width={{ xs: "250px", sm: "300px" }}
         justifyContent={"space-between"}
         marginX={{ xs: "auto", md: "0" }}
       >
@@ -33,7 +32,7 @@ export const Project = ({ el }) => {
           <Stack
             direction={"row"}
             flexWrap={"wrap"}
-            justifyContent={"space-between"}
+            justifyContent={{ xs: "center", sm: "space-between" }}
           >
             {el.stack.map((el) => (
               <Stack direction={"row"} alignItems={"center"} spacing={"5px"}>
@@ -50,7 +49,12 @@ export const Project = ({ el }) => {
               </Stack>
             ))}
           </Stack>
-          <Stack direction={"row"} spacing={2} width={"100%"}>
+          <Stack
+            direction={"row"}
+            spacing={2}
+            width={"100%"}
+            justifyContent={"space-between"}
+          >
             <Link className={styles.link} target="blank" to={el.links.code}>
               <Button fullWidth variant="outlined" startIcon={<GitHubIcon />}>
                 Code

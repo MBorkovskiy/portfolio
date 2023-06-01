@@ -11,7 +11,7 @@ export const Project = ({ el }) => {
   return (
     <Stack
       className={styles.project}
-      spacing={"50px"}
+      spacing={{ xs: "15px", sm: "50px" }}
       width={{ xs: "100%", md: "880px" }}
       justifyContent={"center"}
       marginX={"auto"}

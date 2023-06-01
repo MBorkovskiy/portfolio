@@ -16,7 +16,6 @@ export const About = () => {
       component={motion.div}
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.9 }}
     >
       <Stack
         id="about"

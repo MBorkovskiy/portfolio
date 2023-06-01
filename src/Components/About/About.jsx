@@ -1,6 +1,8 @@
 import styles from "./About.module.scss";
 import about from "../../assets/about.jpg";
 import { Stack, Typography } from "@mui/material";
+import { H3Left } from "../H3Left/H3Left";
+import { H2Left } from "../H2Left/H2Left";
 
 export const About = () => {
   return (
@@ -10,7 +12,7 @@ export const About = () => {
         direction={{ xs: "column", md: "row" }}
         padding={{ xs: "15px", sm: "100px", md: "150px" }}
         spacing={{ xs: 2, sm: 5, md: 10 }}
-        width={"100%"}
+        width={{ xs: "360px", sm: "700px", md: "100%" }}
         marginX={"auto"}
         justifyContent={"center"}
       >
@@ -21,28 +23,14 @@ export const About = () => {
           width={{ xs: "100%", md: "500px" }}
           marginX={{ xs: "auto", md: "0" }}
         >
-          <Typography
-            fontWeight={"900"}
-            textTransform={"uppercase"}
-            color={"primary"}
-            textAlign={{ xs: "center", md: "left" }}
-            gutterBottom
-          >
-            About me
-          </Typography>
-          <Typography
-            fontSize={"25px"}
-            color={"secondary"}
-            fontWeight={"600"}
-            lineHeight={"120%"}
-            textAlign={{ xs: "center", md: "left" }}
-            gutterBottom
-          >
+          <H3Left>About me</H3Left>
+          <H2Left>
             A dedicated Front-end Developer based in Moscow, Russia
-          </Typography>
+          </H2Left>
           <Typography
             color={"secondary"}
             textAlign={{ xs: "center", md: "left" }}
+            fontSize={{ xs: "14px", sm: "16px" }}
           >
             As a Junior Front-End Developer, I possess an impressive arsenal of
             skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel

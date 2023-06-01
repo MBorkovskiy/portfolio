@@ -5,6 +5,7 @@ import { Button, Stack, Typography } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { Link } from "react-router-dom";
 import { Preview } from "../Preview/Preview";
+import { H3Center } from "../H3Center/H3Center";
 
 export const Project = ({ el }) => {
   return (
@@ -24,15 +25,7 @@ export const Project = ({ el }) => {
         marginX={{ xs: "auto", md: "0" }}
       >
         <Stack>
-          <Typography
-            fontWeight={"700"}
-            textTransform={"uppercase"}
-            color={"primary"}
-            textAlign={"center"}
-            gutterBottom
-          >
-            {el.title}
-          </Typography>
+          <H3Center>{el.title}</H3Center>
           <Typography textAlign={"center"} fontSize={14}>
             {el.description}
           </Typography>

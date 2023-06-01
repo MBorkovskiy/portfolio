@@ -13,7 +13,6 @@ export const Footer = () => {
           fontWeight={"700"}
           mb={"30px"}
           color={"primary"}
-          // className={styles.txt}
         >
           Don't be shy! Hit me up!
         </Typography>

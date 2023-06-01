@@ -2,6 +2,7 @@ import styles from "./FirstScreen.module.scss";
 import { Box, Divider, IconButton, Stack, Typography } from "@mui/material";
 import { techIcons } from "../../utils/constants";
 import { Image } from "../Image/Image";
+import { H3Center } from "../H3Center/H3Center";
 
 export const FirstScreen = () => {
   return (
@@ -16,6 +17,7 @@ export const FirstScreen = () => {
       <Stack
         width={{ xs: "100%", sm: "500px" }}
         marginX={{ xs: "auto", md: "0" }}
+        justifyContent={"space-between"}
       >
         <Stack>
           <Typography color={"primary"} className={styles.head}>
@@ -26,16 +28,8 @@ export const FirstScreen = () => {
             based in Moscow, Russia.
           </Typography>
         </Stack>
-        <Box mt={"36px"}>
-          <Typography
-            fontWeight={"900"}
-            textTransform={"uppercase"}
-            textAlign={"center"}
-            color={"primary"}
-            gutterBottom
-          >
-            Tech Stack
-          </Typography>
+        <Box mt={{ xs: "36px", md: "0px" }}>
+          <H3Center>Tech Stack</H3Center>
           <Divider />
           <Stack
             direction={"row"}

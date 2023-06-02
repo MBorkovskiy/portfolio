@@ -23,8 +23,6 @@ export const About = () => {
         direction={{ xs: "column", md: "row" }}
         padding={{ xs: "50px 15px", sm: "100px", md: "150px" }}
         spacing={{ xs: 2, sm: 5, md: 10 }}
-        width={{ xs: "360px", sm: "700px", md: "100%" }}
-        marginX={"auto"}
         justifyContent={"center"}
       >
         <Stack
@@ -36,7 +34,7 @@ export const About = () => {
           <img src={about} alt="Image" />
         </Stack>
         <Stack
-          width={{ xs: "100%", md: "500px" }}
+          width={{ xs: "330px", sm: "500px" }}
           marginX={{ xs: "auto", md: "0" }}
         >
           <H3Left>About me</H3Left>

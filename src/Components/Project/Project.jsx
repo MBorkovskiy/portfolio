@@ -18,7 +18,7 @@ export const Project = ({ el }) => {
         <Preview el={el} />
       </Stack>
       <Stack
-        width={{ xs: "250px", sm: "300px" }}
+        width={{ xs: "250px", sm: "400px", md: "300px" }}
         justifyContent={"space-between"}
         marginX={{ xs: "auto", md: "0" }}
       >

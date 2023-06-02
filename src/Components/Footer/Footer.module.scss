@@ -9,12 +9,9 @@
     padding-inline: 50px;
     align-items: center;
 
-    // @media screen and (max-width: 1024px) {
-    //   width: 600px;
-    // }
-    // @media screen and (max-width: 768px) {
-    //   width: 360px;
-    // }
+    @media screen and (max-width: 768px) {
+      padding-inline: 15px;
+    }
 
     .opacity {
       opacity: 50%;

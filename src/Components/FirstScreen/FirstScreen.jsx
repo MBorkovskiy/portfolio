@@ -20,12 +20,10 @@ export const FirstScreen = () => {
       direction={{ xs: "column-reverse", md: "row" }}
       padding={{ xs: "50px 15px", sm: "100px", md: "150px" }}
       spacing={{ xs: 2, sm: 5, md: 10 }}
-      width={"100%"}
-      marginX={"auto"}
       justifyContent={"center"}
     >
       <Stack
-        width={{ xs: "100%", sm: "500px" }}
+        width={{ xs: "330px", sm: "500px" }}
         marginX={{ xs: "auto", md: "0" }}
         justifyContent={"space-between"}
       >

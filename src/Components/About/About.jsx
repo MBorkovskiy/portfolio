@@ -47,7 +47,7 @@ export const About = () => {
             custom={4}
             color={"secondary"}
             textAlign={{ xs: "center", md: "left" }}
-            fontSize={{ xs: "14px", sm: "16px" }}
+            fontSize={"14px"}
           >
             As a Front-End Developer, I possess an impressive arsenal of skills
             in HTML, CSS, SCSS, JavaScript, React, Redux Toolkit, Tailwind, and

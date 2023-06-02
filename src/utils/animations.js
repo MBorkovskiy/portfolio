@@ -29,7 +29,7 @@ export const aboutImageAnimation = {
 
 export const firstScreenTextAnimation = {
   hidden: {
-    x: -100,
+    x: -30,
     opacity: 0,
   },
   visible: (custom) => ({
@@ -46,7 +46,7 @@ export const firstScreenTextAnimation = {
 
 export const firstScreenStackAnimation = {
   hidden: {
-    y: 100,
+    y: 50,
     opacity: 0,
   },
   visible: (custom) => ({
@@ -63,7 +63,7 @@ export const firstScreenStackAnimation = {
 
 export const firstScreenImageAnimation = {
   hidden: {
-    x: 100,
+    x: 30,
     opacity: 0,
   },
   visible: (custom) => ({

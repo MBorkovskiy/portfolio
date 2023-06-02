@@ -57,7 +57,7 @@ export const projects = [
     stack: ["Scss modules", "MUI", "React JS", "Redux Toolkit"],
     links: {
       code: "https://github.com/MBorkovskiy/tvapp",
-      demo: "https://mborkovskiy.github.io/tvapp/",
+      demo: "https://tvappborkovskiydev.vercel.app/",
     },
     images: [tvone, tvtwo, tvthree],
   },
@@ -68,7 +68,7 @@ export const projects = [
     stack: ["Css modules", "MUI", "React JS", "Redux Toolkit"],
     links: {
       code: "https://github.com/MBorkovskiy/games",
-      demo: "https://mborkovskiy.github.io/games/",
+      demo: "https://gamesborkovskiydev.vercel.app/",
     },
     images: [gamesone, gamestwo, gamesthree],
   },
@@ -79,7 +79,7 @@ export const projects = [
     stack: ["Css", "React JS", "Redux Toolkit"],
     links: {
       code: "https://github.com/MBorkovskiy/store",
-      demo: "https://mborkovskiy.github.io/store/",
+      demo: "https://storeborkovskiydev.vercel.app/",
     },
     images: [storeone, storetwo, storethree],
   },

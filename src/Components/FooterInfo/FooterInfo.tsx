@@ -1,7 +1,8 @@
 import { IconButton, Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import { IFooterInfo } from "../../utils/constants";
 
-export const FooterInfo = ({ title, desc, icon, link }) => {
+export const FooterInfo = ({ title, desc, icon, link }: IFooterInfo) => {
   return (
     <Stack
       direction={"row"}

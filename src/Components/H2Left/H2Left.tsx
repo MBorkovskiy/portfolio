@@ -1,16 +1,18 @@
 import { Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { aboutTextAnimation } from "../../utils/animations";
+import { IChildren } from "../H3Left/H3Left";
 
-export const H3Left = ({ children }) => {
+export const H2Left = ({ children }: IChildren) => {
   return (
     <Typography
-      component={motion.h3}
+      component={motion.h2}
       variants={aboutTextAnimation}
-      custom={2}
-      fontWeight={"900"}
-      textTransform={"uppercase"}
-      color={"primary"}
+      custom={3}
+      fontSize={"25px"}
+      color={"secondary"}
+      fontWeight={"600"}
+      lineHeight={"120%"}
       textAlign={{ xs: "center", md: "left" }}
       gutterBottom
     >

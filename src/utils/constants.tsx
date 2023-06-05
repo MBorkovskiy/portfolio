@@ -12,7 +12,7 @@ import storeone from "../assets/preview/store1.png";
 import storetwo from "../assets/preview/store2.png";
 import storethree from "../assets/preview/store3.png";
 
-export const techIcons = [
+export const techIcons: string[] = [
   "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
   "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg",
   "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
@@ -22,7 +22,14 @@ export const techIcons = [
   "https://mui.com/static/logo.png",
 ];
 
-export const footerInfo = [
+export interface IFooterInfo {
+  title: string;
+  desc: string;
+  icon?: React.ReactNode;
+  link: string;
+}
+
+export const footerInfo: IFooterInfo[] = [
   {
     title: "Location",
     desc: "Russia,Moscow",
@@ -49,7 +56,18 @@ export const footerInfo = [
   },
 ];
 
-export const projects = [
+export interface IProject {
+  title: string;
+  description: string;
+  stack: string[];
+  links: {
+    code: string;
+    demo: string;
+  };
+  images: string[];
+}
+
+export const projects: IProject[] = [
   {
     title: "TvApp",
     description:

@@ -3,7 +3,7 @@ export const aboutTextAnimation = {
     y: -500,
     opacity: 0,
   },
-  visible: (custom) => ({
+  visible: (custom: number) => ({
     y: 0,
     opacity: 1,
     transition: { delay: custom * 0.2 },
@@ -14,7 +14,7 @@ export const aboutImageAnimation = {
   hidden: {
     scale: 0,
   },
-  visible: (custom) => ({
+  visible: (custom: number) => ({
     scale: 1,
     rotate: [0, 0, 180, 180, 0],
     borderRadius: ["0%", "0%", "50%", "50%", "0%"],
@@ -32,7 +32,7 @@ export const firstScreenTextAnimation = {
     x: -30,
     opacity: 0,
   },
-  visible: (custom) => ({
+  visible: (custom: number) => ({
     x: 0,
     opacity: 1,
     transition: {
@@ -49,7 +49,7 @@ export const firstScreenStackAnimation = {
     y: 50,
     opacity: 0,
   },
-  visible: (custom) => ({
+  visible: (custom: number) => ({
     y: 0,
     opacity: 1,
     transition: {
@@ -66,7 +66,7 @@ export const firstScreenImageAnimation = {
     x: 30,
     opacity: 0,
   },
-  visible: (custom) => ({
+  visible: (custom: number) => ({
     x: 0,
     opacity: 1,
     transition: {

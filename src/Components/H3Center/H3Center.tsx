@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
+import { IChildren } from "../H3Left/H3Left";
 
-export const H3Center = ({ children }) => {
+export const H3Center = ({ children }: IChildren) => {
   return (
     <Typography
       component={"h3"}

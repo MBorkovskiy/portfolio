@@ -7,7 +7,13 @@ import { Link } from "react-router-dom";
 import { Preview } from "../Preview/Preview";
 import { H3Center } from "../H3Center/H3Center";
 
-export const Project = ({ el }) => {
+import { IProject } from "../../utils/constants";
+
+export interface IElement {
+  el: IProject;
+}
+
+export const Project = ({ el }: IElement) => {
   return (
     <Stack
       className={styles.project}
@@ -34,7 +40,7 @@ export const Project = ({ el }) => {
             flexWrap={"wrap"}
             justifyContent={{ xs: "center", sm: "space-between" }}
           >
-            {el.stack.map((el) => (
+            {el.stack.map((el: string) => (
               <Stack direction={"row"} alignItems={"center"} spacing={"5px"}>
                 <CheckCircleOutlineIcon color="success" />
                 <Typography

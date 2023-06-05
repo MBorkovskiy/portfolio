@@ -10,7 +10,7 @@ export const Projects = () => {
     <Stack
       id="projects"
       spacing={{ xs: 2, sm: 4, md: 6 }}
-      className={styles.projectss}
+      className={styles.projects}
     >
       <Box paddingX={{ xs: 2, sm: 0 }}>
         <H3Left>Portfolio</H3Left>

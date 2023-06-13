@@ -4,6 +4,9 @@
   line-height: 100%;
   margin-bottom: 20px;
   text-align: left;
+  @media screen and (max-width: 1145px) {
+    font-size: 50px;
+  }
   @media screen and (max-width: 1024px) {
     text-align: center;
   }
@@ -24,7 +27,10 @@
 }
 
 .tech_img_btn {
-  padding: 15px;
+  padding: 0;
+  &:hover {
+    background-color: white;
+  }
   .tech_img {
     width: 34px;
     height: 34px;

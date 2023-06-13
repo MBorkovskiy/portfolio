@@ -23,7 +23,7 @@ export const FirstScreen = () => {
       justifyContent={"center"}
     >
       <Stack
-        width={{ xs: "330px", sm: "500px" }}
+        width={{ xs: "330px", sm: "510px" }}
         marginX={{ xs: "auto", md: "0" }}
         justifyContent={"space-between"}
       >
@@ -58,8 +58,8 @@ export const FirstScreen = () => {
           <Divider />
           <Stack
             direction={"row"}
-            justifyContent={{ xs: "center", sm: "space-between" }}
-            mt={"6px"}
+            justifyContent={"space-between"}
+            mt={"12px"}
             flexWrap={{ xs: "wrap", sm: "nowrap" }}
           >
             {techIcons.map((el) => (

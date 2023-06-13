@@ -44,7 +44,7 @@ export const footerInfo: IFooterInfo[] = [
   },
   {
     title: "Telegram",
-    desc: "+7 (926) 958-80-45",
+    desc: "@maxim_alexeyevich",
     icon: <TelegramIcon fontSize="large" />,
     link: "https://t.me/maxim_alexeyevich",
   },
